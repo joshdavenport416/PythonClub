@@ -4,11 +4,13 @@
 <table class="table">
     <tr>
         <th>Resource Name</th>
+        <th>Resource Type</th>
         <th>Resource Description</th>
     </tr>
 {% for t in resource_list %}
     <tr>
         <td>{{ t.resourcename }}</td>
+        <td>{{ t.resourcetype }}</td>
         <td>{{ t.resourcedescription }}</td>
     </tr>
 {% endfor %}
